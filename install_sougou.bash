@@ -20,3 +20,10 @@ sudo apt-get install fcitx-config-gtk
 sudo apt-get install fcitx-table-all
 #⑥安装im-switch切换工具（此步导致系统设置语言支持栏消失，可不执行）
 sudo apt-get install im-switch
+
+
+#ubuntu语言支持不见了？
+
+#请终端执行下列语句：
+sudo apt-get install language-selector-gnome
+#说明：ubuntu安装中文输入法时，尽量不要安装 im-switch （新版本已被im-config替代），安装im-switch 会导致内置的im-config和languagesupport被卸载，所以解决方法就是先卸载掉 im-switch ，重新装回 im-config和language support。
